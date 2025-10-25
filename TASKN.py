@@ -5,10 +5,10 @@ from datetime import datetime
 class Order:
     products_file = "products.csv"
     log_file = "log.txt"
-    discount_rate = 0  # Global discount (in %)
+    discount_rate = 0  
 
     def __init__(self):
-        self.items = []  # List of tuples: (name, quantity, total_price)
+        self.items = []
 
     @staticmethod
     def log_action(func):
@@ -90,3 +90,4 @@ if __name__ == "__main__":
 
     print(f"Final total after discount: {final_total}")
     print("Check log.txt for detailed actions.")
+
